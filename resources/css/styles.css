@@ -13,7 +13,7 @@ h1, h2, h3, p, a {
     font-family: 'PT Mono', sans-serif;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 h2 {
     font-size: 1.5rem;
@@ -42,12 +42,14 @@ header {
     align-items: center;
 }
 .horizontal {
+    margin: 0; padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .vertical, .logo-text, .contact {
+    margin: 0; padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +66,9 @@ header {
     border-bottom: 0.5rem solid #000000;
 }
 .header-content {
+    margin: 0.125rem;
     padding: 1rem;
+    border: 1px solid black;
 }
 /* logo and name */
 #logo-img {
@@ -78,7 +82,7 @@ header {
     padding: 0.5rem 0;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.125rem;
 }
 /* contact */
 .contact a {
@@ -135,19 +139,8 @@ main {
         justify-content: space-around;
         align-items: center;
     }
-    .logo-text img {
+    #logo-img {
         height: 6.5rem;
-    }
-    .navigator {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 1rem;
-    }
-    .navigator a {
-        margin: 0.25rem 0.5rem;
-        font-size: 1.35rem;
-        align-self: stretch;
-        text-align: center;
     }
     .contact {flex-direction: column;}
     .contact a {padding: 0.5rem;}
